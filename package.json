@@ -1,0 +1,22 @@
+{
+  "name": "taboola-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tests.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "jest-environment": "jsdom"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.3.1",
+    "xhr-mock": "^2.5.1"
+  }
+}
