@@ -5,7 +5,7 @@
 const { query } = require('./recommendationService');
 
 test('query', () => {
-  
+
   const xhrMock = {
     open: jest.fn(),
     send: jest.fn(),
@@ -15,8 +15,6 @@ test('query', () => {
     response: 'Hello World!',
   };
   jest.spyOn(window, 'XMLHttpRequest').mockImplementation(() => xhrMock);
-
-  //   window.XMLHttpRequest = jest.fn(() => xhrMock);
 
   const callback = jest.fn();
   query(callback);
